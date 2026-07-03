@@ -1,17 +1,19 @@
 <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-ah" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="oklch(0.58 0.15 25)"/>
-      <stop offset="100%" stop-color="oklch(0.42 0.13 20)"/>
+    <radialGradient id="felt-ah" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#167a4a"/>
+      <stop offset="55%" stop-color="#0f5132"/>
+      <stop offset="100%" stop-color="#083b24"/>
+    </radialGradient>
+    <linearGradient id="gold-ah" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd54f"/>
+      <stop offset="100%" stop-color="#ff9800"/>
     </linearGradient>
   </defs>
-  <rect width="400" height="250" fill="url(#bg-ah)"/>
-  <g opacity="0.9">
-    <rect x="150" y="70" width="70" height="98" rx="8" fill="oklch(0.97 0.01 85)" transform="rotate(-12 185 119)"/>
-    <rect x="180" y="70" width="70" height="98" rx="8" fill="oklch(0.97 0.01 85)" transform="rotate(6 215 119)"/>
-    <text x="203" y="112" font-family="Georgia, serif" font-size="30" font-weight="700" fill="oklch(0.55 0.14 25)" text-anchor="middle" transform="rotate(6 215 119)">A♠</text>
-  </g>
-  <circle cx="90" cy="90" r="22" fill="oklch(0.92 0.05 85)" stroke="oklch(0.3 0.05 25)" stroke-width="3"/>
-  <circle cx="90" cy="90" r="22" fill="none" stroke="oklch(0.3 0.05 25)" stroke-width="2" stroke-dasharray="4 5"/>
-  <text x="200" y="215" font-family="Georgia, serif" font-size="30" font-weight="700" fill="oklch(0.97 0.01 85)" text-anchor="middle">Action Hold Em</text>
+  <rect width="400" height="250" fill="url(#felt-ah)"/>
+  <text x="200" y="110" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="url(#gold-ah)" text-anchor="middle">ACTION</text>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="30" font-weight="900" fill="#ffffff" text-anchor="middle">HOLD 'EM</text>
+  <text x="200" y="192" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="14" text-anchor="middle">
+    <tspan fill="#e53935">&#9830;</tspan><tspan fill="#1e88e5">&#9824;</tspan><tspan fill="#e53935">&#9829;</tspan><tspan fill="#1e88e5">&#9827;</tspan>
+  </text>
 </svg>
