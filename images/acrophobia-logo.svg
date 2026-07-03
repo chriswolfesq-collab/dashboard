@@ -1,15 +1,22 @@
 <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-ac" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="oklch(0.58 0.15 200)"/>
-      <stop offset="100%" stop-color="oklch(0.4 0.12 200)"/>
-    </linearGradient>
+    <radialGradient id="bg-ac" cx="50%" cy="15%" r="90%">
+      <stop offset="0%" stop-color="#18233b"/>
+      <stop offset="55%" stop-color="#070b12"/>
+      <stop offset="100%" stop-color="#070b12"/>
+    </radialGradient>
+    <filter id="glow-ac" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
   <rect width="400" height="250" fill="url(#bg-ac)"/>
-  <g font-family="Georgia, serif" font-weight="700" fill="oklch(0.97 0.01 85)">
-    <text x="200" y="95" font-size="44" text-anchor="middle" letter-spacing="6">A.C.R.O.</text>
-    <path d="M 110 118 L 200 150 L 290 118" fill="none" stroke="oklch(0.97 0.01 85)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M 200 150 L 195 138 M 200 150 L 205 138" stroke="oklch(0.97 0.01 85)" stroke-width="4" stroke-linecap="round"/>
+  <text x="200" y="112" font-family="Arial, sans-serif" font-size="44" font-weight="900" letter-spacing="2" fill="#6cff8d" text-anchor="middle" filter="url(#glow-ac)">ACROPHOBIA</text>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#9aa8c0" text-anchor="middle">A PASS-THE-DEVICE ACRONYM PARTY GAME</text>
+  <g font-family="Arial, sans-serif" font-weight="900" font-size="26" letter-spacing="8" fill="#ffe66d" text-anchor="middle" filter="url(#glow-ac)">
+    <text x="200" y="205">X.Y.Z.</text>
   </g>
-  <text x="200" y="215" font-family="Georgia, serif" font-size="30" font-weight="700" fill="oklch(0.97 0.01 85)" text-anchor="middle">Acrophobia</text>
 </svg>
