@@ -1,0 +1,181 @@
+:root {
+  --bg: oklch(0.96 0.018 75);
+  --header-bg: oklch(0.24 0.03 145);
+  --header-bg-stripe: oklch(0.27 0.03 145);
+  --header-title: oklch(0.94 0.03 85);
+  --header-subtitle: oklch(0.85 0.02 90);
+  --text: oklch(0.28 0.03 50);
+  --text-muted: oklch(0.4 0.03 50);
+  --text-faint: oklch(0.5 0.03 60);
+  --card-bg: oklch(0.985 0.008 85);
+  --card-shadow-edge: oklch(0.8 0.02 85 / 0.6);
+  --card-shadow: oklch(0.3 0.03 50 / 0.08);
+  --card-shadow-hover: oklch(0.3 0.03 50 / 0.16);
+  --dashed-border: oklch(0.7 0.03 70);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: 'Karla', sans-serif;
+  color: var(--text);
+}
+
+@keyframes felt-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.site-header {
+  background: var(--header-bg);
+  padding: 56px 40px 64px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(45deg, var(--header-bg-stripe) 0px, var(--header-bg-stripe) 2px, transparent 2px, transparent 14px);
+  opacity: 0.5;
+}
+
+.site-header-inner {
+  position: relative;
+}
+
+.site-title {
+  font-family: 'Domine', serif;
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 0.5px;
+  color: var(--header-title);
+}
+
+.site-subtitle {
+  margin-top: 14px;
+  font-size: 19px;
+  color: var(--header-subtitle);
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Game grid */
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.game-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 var(--card-shadow-edge), 0 8px 20px var(--card-shadow);
+  border-top: 6px solid var(--accent);
+  animation: felt-in 0.5s ease both;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px var(--card-shadow-hover);
+}
+
+.game-card-art {
+  padding: 22px 22px 0;
+}
+
+.game-card-art img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+
+.game-card-body {
+  padding: 20px 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.game-card-name {
+  font-family: 'Domine', serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.game-card-blurb {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.game-card-cta {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.game-card-cta.is-disabled {
+  color: var(--text-faint);
+}
+
+/* Coming soon tile (no game yet) */
+.coming-soon-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 2px dashed var(--dashed-border);
+  border-radius: 14px;
+  padding: 40px 22px;
+  min-height: 260px;
+  color: var(--text-faint);
+  text-align: center;
+}
+
+.coming-soon-tile-title {
+  font-family: 'Domine', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.coming-soon-tile-desc {
+  font-size: 14px;
+  max-width: 220px;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 32px;
+  font-size: 13px;
+  color: var(--text-faint);
+}

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-bs" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="oklch(0.58 0.15 85)"/>
+      <stop offset="100%" stop-color="oklch(0.42 0.12 80)"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#bg-bs)"/>
+  <g>
+    <rect x="130" y="65" width="66" height="94" rx="8" fill="oklch(0.97 0.01 85)" transform="rotate(-9 163 112)"/>
+    <rect x="165" y="60" width="66" height="94" rx="8" fill="oklch(0.97 0.01 85)" transform="rotate(4 198 107)"/>
+    <rect x="200" y="68" width="66" height="94" rx="8" fill="oklch(0.97 0.01 85)" transform="rotate(15 233 115)"/>
+  </g>
+  <g transform="translate(230,100)">
+    <circle r="30" fill="oklch(0.97 0.01 85)" stroke="oklch(0.42 0.12 80)" stroke-width="4"/>
+    <text x="0" y="12" font-family="Georgia, serif" font-size="34" font-weight="700" fill="oklch(0.42 0.12 80)" text-anchor="middle">?</text>
+  </g>
+  <text x="200" y="215" font-family="Georgia, serif" font-size="30" font-weight="700" fill="oklch(0.97 0.01 85)" text-anchor="middle">BS</text>
+</svg>

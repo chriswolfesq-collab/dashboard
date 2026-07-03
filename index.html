@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wolf Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@500;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-title">Wolf Games</div>
+    <div class="site-subtitle">Homemade card &amp; party games, built for the table (or the group chat).</div>
+  </div>
+</header>
+
+<main>
+  <div class="game-grid">
+
+    <a href="https://chriswolfesq-collab.github.io/actionholdem/" class="game-card" style="--accent: oklch(0.55 0.14 25);">
+      <div class="game-card-art"><img src="images/action-holdem-logo.svg" alt="Action Hold Em logo"></div>
+      <div class="game-card-body">
+        <div class="game-card-name">Action Hold Em</div>
+        <div class="game-card-blurb">Texas Hold&rsquo;em with a twist &mdash; dares and drama at every bet.</div>
+        <div class="game-card-cta">Play now <span>&rarr;</span></div>
+      </div>
+    </a>
+
+    <a href="https://chriswolfesq-collab.github.io/anagram/" class="game-card" style="--accent: oklch(0.55 0.14 150);">
+      <div class="game-card-art"><img src="images/anagram-logo.svg" alt="Anagram logo"></div>
+      <div class="game-card-body">
+        <div class="game-card-name">Anagram</div>
+        <div class="game-card-blurb">Race to unscramble letters before the timer runs out.</div>
+        <div class="game-card-cta">Play now <span>&rarr;</span></div>
+      </div>
+    </a>
+
+    <div class="game-card" style="--accent: oklch(0.55 0.14 85);">
+      <div class="game-card-art"><img src="images/bs-logo.svg" alt="BS logo"></div>
+      <div class="game-card-body">
+        <div class="game-card-name">BS</div>
+        <div class="game-card-blurb">Bluff your way through the deck &mdash; call it, or get caught.</div>
+        <div class="game-card-cta is-disabled">Coming soon</div>
+      </div>
+    </div>
+
+    <div class="game-card" style="--accent: oklch(0.55 0.14 260);">
+      <div class="game-card-art"><img src="images/spoons-logo.svg" alt="Spoons logo"></div>
+      <div class="game-card-body">
+        <div class="game-card-name">Spoons</div>
+        <div class="game-card-blurb">Match four of a kind, then grab a spoon before it&rsquo;s gone.</div>
+        <div class="game-card-cta is-disabled">Coming soon</div>
+      </div>
+    </div>
+
+    <a href="https://chriswolfesq-collab.github.io/namegame/" class="game-card" style="--accent: oklch(0.55 0.14 330);">
+      <div class="game-card-art"><img src="images/namegame-logo.svg" alt="Name Game logo"></div>
+      <div class="game-card-body">
+        <div class="game-card-name">Name Game</div>
+        <div class="game-card-blurb">Guess the name on your forehead from your team&rsquo;s clues.</div>
+        <div class="game-card-cta">Play now <span>&rarr;</span></div>
+      </div>
+    </a>
+
+    <div class="game-card" style="--accent: oklch(0.55 0.14 200);">
+      <div class="game-card-art"><img src="images/acrophobia-logo.svg" alt="Acrophobia logo"></div>
+      <div class="game-card-body">
+        <div class="game-card-name">Acrophobia</div>
+        <div class="game-card-blurb">Turn any acronym into the funniest phrase you can invent.</div>
+        <div class="game-card-cta is-disabled">Coming soon</div>
+      </div>
+    </div>
+
+    <div class="coming-soon-tile">
+      <div class="coming-soon-tile-title">More on the way</div>
+      <div class="coming-soon-tile-desc">New games get added here as they're built.</div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> Wolf Games
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

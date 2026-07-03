@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-ac" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="oklch(0.58 0.15 200)"/>
+      <stop offset="100%" stop-color="oklch(0.4 0.12 200)"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#bg-ac)"/>
+  <g font-family="Georgia, serif" font-weight="700" fill="oklch(0.97 0.01 85)">
+    <text x="200" y="95" font-size="44" text-anchor="middle" letter-spacing="6">A.C.R.O.</text>
+    <path d="M 110 118 L 200 150 L 290 118" fill="none" stroke="oklch(0.97 0.01 85)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 200 150 L 195 138 M 200 150 L 205 138" stroke="oklch(0.97 0.01 85)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="215" font-family="Georgia, serif" font-size="30" font-weight="700" fill="oklch(0.97 0.01 85)" text-anchor="middle">Acrophobia</text>
+</svg>
