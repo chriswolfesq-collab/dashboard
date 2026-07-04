@@ -51,24 +51,10 @@ body {
 }
 
 .site-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-}
-
-.site-logo-icon {
-  width: 68px;
-  height: 68px;
-  flex-shrink: 0;
-}
-
-.site-title {
-  font-family: 'Domine', serif;
-  font-weight: 700;
-  font-size: 56px;
-  letter-spacing: 0.5px;
-  color: var(--header-title);
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .site-subtitle {
